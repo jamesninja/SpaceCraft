@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+<svg
+    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://www.w3.org/2000/svg"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+    xmlns:svg="http://www.w3.org/2000/svg"
+    xmlns:ns1="http://sozi.baierouge.fr"
+    xmlns:xlink="http://www.w3.org/1999/xlink"
+    id="svg2"
+    sodipodi:docname="Space Craft II.svg"
+    inkscape:export-filename="C:\Documents and Settings\Dan\Skrivbord\Space Craft II.png"
+    viewBox="0 0 136.78 728.9"
+    sodipodi:version="0.32"
+    inkscape:export-xdpi="310"
+    version="1.0"
+    inkscape:output_extension="org.inkscape.output.svg.inkscape"
+    inkscape:export-ydpi="310"
+    inkscape:version="0.45.1+0.46pre1+devel"
+  >
+  <defs
+      id="defs4"
+    >
+    <filter
+        id="filter3228"
+        height="1.0869"
+        width="2.8106"
+        y="-.043454"
+        x="-.90528"
+        inkscape:collect="always"
+      >
+      <feGaussianBlur
+          id="feGaussianBlur3230"
+          stdDeviation="9.1447549"
+          inkscape:collect="always"
+      />
+    </filter
+    >
+    <filter
+        id="filter3305"
+        height="1.075"
+        width="1.5914"
+        y="-.037476"
+        x="-.29568"
+        inkscape:collect="always"
+      >
+      <feGaussianBlur
+          id="feGaussianBlur3307"
+          stdDeviation="2.235178"
+          inkscape:collect="always"
+      />
+    </filter
+    >
+    <filter
+        id="filter3309"
+        height="1.0505"
+        width="1.2709"
+        y="-.025253"
+        x="-.13547"
+        inkscape:collect="always"
+      >
+      <feGaussianBlur
+          id="feGaussianBlur3311"
+          stdDeviation="2.235178"
+          inkscape:collect="always"
+      />
+    </filter
+    >
+    <filter
+        id="filter3313"
+        inkscape:collect="always"
+      >
+      <feGaussianBlur
+          id="feGaussianBlur3315"
+          stdDeviation="2.235178"
+          inkscape:collect="always"
+      />
+    </filter
+    >
+    <filter
+        id="filter3317"
+        inkscape:collect="always"
+      >
+      <feGaussianBlur
+          id="feGaussianBlur3319"
+          stdDeviation="2.235178"
+          inkscape:collect="always"
+      />
+    </filter
+    >
+  </defs
+  >
+  <sodipodi:namedview
+      id="base"
+      bordercolor="#666666"
+      inkscape:pageshadow="2"
+      guidetolerance="10"
+      pagecolor="#ffffff"
+      gridtolerance="10000"
+      inkscape:window-height="838"
+      inkscape:zoom="0.7"
+      objecttolerance="10"
+      showgrid="false"
+      borderopacity="1.0"
+      inkscape:current-layer="layer1"
+      inkscape:cx="36.053526"
+      inkscape:cy="346.05923"
+      inkscape:window-y="0"
+      inkscape:window-x="0"
+      inkscape:window-width="1152"
+      inkscape:pageopacity="0.0"
+      inkscape:document-units="px"
+  />
+  <g
+      id="layer1"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      transform="translate(-201.97 -151.82)"
+    >
+    <g
+        id="g3205"
+      >
+      <path
+          id="path3249"
+          sodipodi:nodetypes="cscsc"
+          style="fill-rule:evenodd;filter:url(#filter3317);stroke:#de5b00;stroke-width:1px;fill:#f90000"
+          d="m248.57 524.51s-19.28 72.85-20 96.42c-0.71 23.58 37.14 259.29 37.14 259.29s44.29-239.29 45-262.14c0.72-22.86-22.85-93.57-22.85-93.57"
+      />
+      <path
+          id="path3251"
+          style="fill-rule:evenodd;filter:url(#filter3313);stroke:#de5b00;stroke-width:1px;fill:#f96d00"
+          d="m255 525.93s-12.86 77.15-13.57 87.15c-0.72 10 23.57 198.57 23.57 198.57s35.71-192.86 35.71-197.14c0-4.29-18.57-89.29-18.57-89.29"
+      />
+      <path
+          id="path3253"
+          style="fill-rule:evenodd;filter:url(#filter3309);stroke:#de5b00;stroke-width:1px;fill:#f9be00"
+          d="m262.86 526.65s-10 80-10.72 83.57c-0.71 3.57 13.57 127.14 13.57 127.14s25-120 25-125-12.85-86.43-12.85-86.43"
+      />
+      <path
+          id="path3255"
+          sodipodi:nodetypes="ccccc"
+          style="fill-rule:evenodd;filter:url(#filter3305);stroke:#de5b00;stroke-width:1px;fill:#f9f800"
+          d="m271.43 525.93l-10 82.86 7.14 59.29 10-60-7.14-82.15z"
+      />
+      <rect
+          id="rect2388"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.96993px;fill:#6c6c6c"
+          rx="65.728"
+          ry=".053213"
+          height="300.75"
+          width="39.605"
+          y="214.85"
+          x="250.32"
+      />
+      <path
+          id="path2390"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cd0000"
+          d="m254.73 440.93s-48.06 41.26-51.46 57.42c-3.41 16.16 2.55 63.37 8.5 63.8 5.96 0.42 11.91-59.97 18.29-64.65s24.24-11.06 24.24-11.06"
+      />
+      <path
+          id="path3166"
+          style="fill-rule:evenodd;fill:#a70400"
+          d="m253.96 441.78s-27.64 26.8-29.77 28.92c-2.13 2.13-5.95 13.19-2.98 17.02 2.98 3.82 14.89 6.38 14.89 6.38s8.93-5.11 10.21-5.96c1.27-0.85 7.23-1.7 7.23-1.7"
+      />
+      <path
+          id="path3178"
+          sodipodi:nodetypes="ccsccc"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#989797"
+          d="m250.13 214.37l12.33-56.54s2.4-5.72 6.91-5.72c4.52 0 6.62 5.42 6.62 5.42l13.83 57.14-39.69-0.3z"
+      />
+      <path
+          id="path3180"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cdcccc"
+          d="m262.77 170.46l-7.82 36.99h5.11l2.71-36.99z"
+      />
+      <path
+          id="path3182"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cdcccc"
+          d="m276.59 170.61l7.82 36.99h-5.11l-2.71-36.99z"
+      />
+      <path
+          id="path3184"
+          sodipodi:nodetypes="ccccc"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cdcccc"
+          d="m268.47 171.36l-3.61 36.38h9.63l-4.21-36.38h-1.81z"
+      />
+      <path
+          id="path3186"
+          d="m304.06 761.44v-504.07h24.24v505.08l-24.24-1.01z"
+          style="filter:url(#filter3228);fill-rule:evenodd;fill:#ffff7e"
+          transform="matrix(.59544 0 0 .59544 81.71 61.418)"
+      />
+      <path
+          id="path3170"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#00002c"
+          d="m251.84 515.79l-3.41 9.35h44.24l-5.11-9.35h-35.72z"
+      />
+      <path
+          id="path3162"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cd0000"
+          d="m286 440.29s48.06 41.26 51.47 57.42c3.4 16.16-2.56 63.37-8.51 63.8-5.95 0.42-11.91-59.97-18.29-64.65s-24.24-11.06-24.24-11.06"
+      />
+      <path
+          id="path3164"
+          sodipodi:nodetypes="csc"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cd0000"
+          d="m267.91 441.78s-5.97 122.92 1.28 122.92c6.38 0 2.55-122.92 2.55-122.92"
+      />
+      <path
+          id="path3168"
+          style="fill-rule:evenodd;fill:#a70400"
+          d="m286.38 441.14s27.64 26.8 29.77 28.92c2.13 2.13 5.96 13.19 2.98 17.02s-14.89 6.38-14.89 6.38-8.93-5.11-10.21-5.96c-1.27-0.85-7.23-1.7-7.23-1.7"
+      />
+      <path
+          id="path3172"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cd0000"
+          d="m254.63 257.37s-18.65 24.67-20.45 34.59c-1.81 9.92-2.41 17.44-2.41 17.44l23.16-19.55"
+      />
+      <path
+          id="path3174"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cd0000"
+          d="m286.07 257.52s18.64 24.67 20.45 34.59c1.8 9.92 2.4 17.44 2.4 17.44l-23.16-19.55"
+      />
+      <path
+          id="path3176"
+          style="fill-rule:evenodd;stroke:#000000;stroke-width:.59544px;fill:#cd0000"
+          d="m267.26 257.68l2.1 52.02 2.11-52.02"
+      />
+    </g
+    >
+  </g
+  >
+  <metadata
+    >
+    <rdf:RDF
+      >
+      <cc:Work
+        >
+        <dc:format
+          >image/svg+xml</dc:format
+        >
+        <dc:type
+            rdf:resource="http://purl.org/dc/dcmitype/StillImage"
+        />
+        <cc:license
+            rdf:resource="http://creativecommons.org/licenses/publicdomain/"
+        />
+        <dc:publisher
+          >
+          <cc:Agent
+              rdf:about="http://openclipart.org/"
+            >
+            <dc:title
+              >Openclipart</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:publisher
+        >
+        <dc:title
+          >SpaceCraft II</dc:title
+        >
+        <dc:date
+          >2008-03-31T09:25:49</dc:date
+        >
+        <dc:description
+          >A spaceCraft... enjoy!   :-)</dc:description
+        >
+        <dc:source
+          >https://openclipart.org/detail/16072/spacecraft-ii-by-mystica-16072</dc:source
+        >
+        <dc:creator
+          >
+          <cc:Agent
+            >
+            <dc:title
+              >mystica</dc:title
+            >
+          </cc:Agent
+          >
+        </dc:creator
+        >
+        <dc:subject
+          >
+          <rdf:Bag
+            >
+            <rdf:li
+              >space</rdf:li
+            >
+            <rdf:li
+              >space craft</rdf:li
+            >
+          </rdf:Bag
+          >
+        </dc:subject
+        >
+      </cc:Work
+      >
+      <cc:License
+          rdf:about="http://creativecommons.org/licenses/publicdomain/"
+        >
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Reproduction"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#Distribution"
+        />
+        <cc:permits
+            rdf:resource="http://creativecommons.org/ns#DerivativeWorks"
+        />
+      </cc:License
+      >
+    </rdf:RDF
+    >
+  </metadata
+  >
+</svg
+>
