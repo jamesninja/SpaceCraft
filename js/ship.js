@@ -6,9 +6,9 @@ class Ship {
 
       const imgRatio = img.naturalWidth / img.naturalHeight;
 
-      this.w = 100;
+      this.w = 500;
       this.h = this.w / imgRatio;
-      this.x = 450;
+      this.x = 50;
       this.y = 1300;
     };
     img.src = "images/spaceship_green.svg";
@@ -30,4 +30,16 @@ class Ship {
       this.x = this.x + this.w;
     }
   }
+
+  //moveUp() {
+  //if (this.x < 800) {
+  //this.x = this.x + this.w;
+  //}
+  //}
+
+  //moveDown() {
+  //if (this.x < 800) {
+  //this.x = this.x + this.w;
+  //}
+  //}
 }

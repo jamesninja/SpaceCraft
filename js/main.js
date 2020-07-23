@@ -13,8 +13,10 @@ function draw() {
   //
 
   const img = document.createElement("img");
+  img.onload = function () {
+    ctx.drawImage(img, 0, 0, W, H);
+  };
   img.src = "images/background.jpg";
-  ctx.drawImage(img, 0, 0, W, H);
 
   //
   // Iteration 2: car drawing
@@ -26,8 +28,8 @@ function draw() {
   //
 
   obstacles.forEach(function (ob) {
-    ob.draw();
-  });
+  ob.draw();
+  //});
 
   //
   // Iteration #5: collisions
@@ -44,7 +46,7 @@ function draw() {
   //
   ctx.font = "80px serif";
   ctx.fillText(`Score: ${points}`, 100, 1200);
-}
+})
 
 document.onkeydown = function (e) {
   if (!ship) return;
@@ -57,6 +59,12 @@ document.onkeydown = function (e) {
     case 39:
       ship.moveRight();
       break;
+    //case 38:
+      //ship.moveUp();
+      //break;
+    //case 40:
+      //ship.moveUp();
+      //break;
   }
 };
 
@@ -120,4 +128,4 @@ document.getElementById("start-button").onclick = function () {
 };
 
 // auto-start
-startGame();
+//startGame()
