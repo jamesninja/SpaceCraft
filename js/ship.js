@@ -6,10 +6,10 @@ class Ship {
 
       const imgRatio = img.naturalWidth / img.naturalHeight;
 
-      this.w = 500;
+      this.w = 100;
       this.h = this.w / imgRatio;
-      this.x = 50;
-      this.y = 1300;
+      this.x = 300;
+      this.y = 300;
     };
     img.src = "images/spaceship_green.svg";
   }
@@ -21,25 +21,33 @@ class Ship {
   }
 
   moveLeft() {
-    if (this.x > 100) {
-      this.x = this.x - this.w;
+    if (this.x <= 0) {
+      this.x += 0;
+    } else {
+      this.x += -10;
     }
   }
   moveRight() {
-    if (this.x < 800) {
-      this.x = this.x + this.w;
+    if (this.x >= W) {
+      this.x += 0;
+    } else {
+      this.x += 10;
     }
   }
 
-  //moveUp() {
-  //if (this.x < 800) {
-  //this.x = this.x + this.w;
-  //}
-  //}
+  moveUp() {
+    if (this.y <= 0) {
+      this.y -= 0;
+    } else {
+      this.y -= 10;
+    }
+  }
 
-  //moveDown() {
-  //if (this.x < 800) {
-  //this.x = this.x + this.w;
-  //}
-  //}
+  moveDown() {
+    if (this.y >= H) {
+      this.y += 0;
+    } else {
+      this.y += 10;
+    }
+  }
 }

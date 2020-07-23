@@ -8,13 +8,13 @@ class Obstacle {
     const img = document.createElement("img");
     img.onload = () => {
       this.img = img;
-
-      this.x = random(100, 700);
-      this.y = 0;
-      this.w = random(200, ctx.canvas.width - 100 - this.x);
-      this.h = 50;
+      const imgRatio = img.naturalWidth / img.naturalHeight;
+      this.x = W;
+      this.y = random(100, 700);
+      this.w = 80;
+      this.h = this.w / imgRatio;
     };
-    img.src = "images/meteor.jpeg";
+    img.src = "images/meteor.svg";
   }
 
   draw() {

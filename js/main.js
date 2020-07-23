@@ -8,6 +8,7 @@ const W = ctx.canvas.width;
 const H = ctx.canvas.height;
 
 function draw() {
+  //dessiner le sol
   //
   // Iteration 1: road drawing
   //
@@ -28,26 +29,26 @@ function draw() {
   //
 
   obstacles.forEach(function (ob) {
-  ob.draw();
-  //});
+    ob.draw();
+    //});
 
-  //
-  // Iteration #5: collisions
-  //
+    //
+    // Iteration #5: collisions
+    //
 
-  obstacles.forEach(function (ob) {
-    if (ob.hits(ship)) {
-      gameover = true;
-    }
+    obstacles.forEach(function (ob) {
+      if (ob.hits(ship)) {
+        gameover = true;
+      }
+    });
+
+    //
+    // Iteration #6: points
+    //
+    ctx.font = "80px serif";
+    ctx.fillText(`Score: ${points}`, 100, 1200);
   });
-
-  //
-  // Iteration #6: points
-  //
-  ctx.font = "80px serif";
-  ctx.fillText(`Score: ${points}`, 100, 1200);
-})
-
+}
 document.onkeydown = function (e) {
   if (!ship) return;
 
@@ -59,12 +60,12 @@ document.onkeydown = function (e) {
     case 39:
       ship.moveRight();
       break;
-    //case 38:
-      //ship.moveUp();
-      //break;
-    //case 40:
-      //ship.moveUp();
-      //break;
+    case 38:
+      ship.moveUp();
+      break;
+    case 40:
+      ship.moveDown();
+      break;
   }
 };
 
@@ -72,15 +73,16 @@ let raf;
 let frames = 0;
 function animLoop() {
   frames++;
-  if (frames % 300 === 0) {
+  if (frames % 150 === 0) {
     obstacles.push(new Obstacle());
   }
   for (let i = 0; i < obstacles.length; i++) {
-    obstacles[i].y += 2;
-    if (obstacles[i].y > ship.y + ship.h) {
-      points++;
-      obstacles.splice(i, 1);
-    }
+    obstacles[i].x -= 2;
+    obstacles[i].y += 1;
+    // if (obstacles[i].y > ship.y + ship.h) {
+    // points++;
+    // obstacles.splice(i, 1);
+    //}
   }
   draw();
 
@@ -124,6 +126,8 @@ function startGame() {
 }
 
 document.getElementById("start-button").onclick = function () {
+  document.querySelector(".game-intro").style.visibility = "hidden";
+
   startGame();
 };
 
