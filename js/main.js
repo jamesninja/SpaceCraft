@@ -1,5 +1,5 @@
 let ship;
-let obstacles = [];
+let meteors = [];
 let gameover = false;
 let points = 0;
 
@@ -19,8 +19,14 @@ function draw() {
   };
   img.src = "images/background.jpg";
 
+  //const img = document.createElement("img");
+  //img.onload = function () {
+  //ctx.drawImage(img, 0, 0, W, H);
+  //};
+  //img.src = "images/floor.png";
+
   //
-  // Iteration 2: car drawing
+  // Iteration 2: ship drawing
   //
   ship.draw();
 
@@ -28,7 +34,7 @@ function draw() {
   // Iteration #4: obstacles
   //
 
-  obstacles.forEach(function (ob) {
+  meteors.forEach(function (ob) {
     ob.draw();
     //});
 
@@ -36,7 +42,7 @@ function draw() {
     // Iteration #5: collisions
     //
 
-    obstacles.forEach(function (ob) {
+    meteors.forEach(function (ob) {
       if (ob.hits(ship)) {
         gameover = true;
       }
@@ -73,12 +79,12 @@ let raf;
 let frames = 0;
 function animLoop() {
   frames++;
-  if (frames % 150 === 0) {
-    obstacles.push(new Obstacle());
+  if (frames % 50 === 0) {
+    meteors.push(new Meteor());
   }
-  for (let i = 0; i < obstacles.length; i++) {
-    obstacles[i].x -= 2;
-    obstacles[i].y += 1;
+  for (let i = 0; i < meteors.length; i++) {
+    meteors[i].x -= 5;
+    meteors[i].y += 0;
     // if (obstacles[i].y > ship.y + ship.h) {
     // points++;
     // obstacles.splice(i, 1);
@@ -89,7 +95,7 @@ function animLoop() {
   if (!gameover) {
     raf = requestAnimationFrame(animLoop);
   } else {
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "white";
     ctx.fillRect(100, 600, 800, 600);
 
     ctx.font = "100px serif";
@@ -115,12 +121,12 @@ function startGame() {
   }
   ctx.clearRect(0, 0, W, H);
   gameover = false;
-  obstacles = [];
+  meteors = [];
   points = 0;
 
   ship = new Ship();
-  let obstacle = new Obstacle();
-  obstacles.push(obstacle);
+  let meteor = new Meteor();
+  meteors.push(meteor);
 
   animLoop();
 }
