@@ -11,7 +11,7 @@ class Meteor {
       const imgRatio = img.naturalWidth / img.naturalHeight;
       this.x = W;
       this.y = random(50, 450);
-      this.w = 50;
+      this.w = 30;
       this.h = this.w / imgRatio;
     };
     img.src = "images/meteor.svg";

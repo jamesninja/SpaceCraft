@@ -9,21 +9,12 @@ const H = ctx.canvas.height;
 
 function draw() {
   //dessiner le sol
-  //
-  // Iteration 1: road drawing
-  //
 
+  // Iteration 1: background drawing
+  //
   const img = document.createElement("img");
-  img.onload = function () {
-    ctx.drawImage(img, 0, 0, W, H);
-  };
-  img.src = "images/background.jpg";
-
-  //const img = document.createElement("img");
-  //img.onload = function () {
-  //ctx.drawImage(img, 0, 0, W, H);
-  //};
-  //img.src = "images/floor.png";
+  img.src = "images/background.png";
+  ctx.drawImage(img, 0, 0, W, H);
 
   //
   // Iteration 2: ship drawing
@@ -72,6 +63,9 @@ document.onkeydown = function (e) {
     case 40:
       ship.moveDown();
       break;
+    case 32:
+      ship.shoot();
+      break;
   }
 };
 
@@ -95,23 +89,23 @@ function animLoop() {
   if (!gameover) {
     raf = requestAnimationFrame(animLoop);
   } else {
-    ctx.fillStyle = "white";
-    ctx.fillRect(100, 600, 800, 600);
+    //ctx.fillStyle = "black";
+    //ctx.fillRect(300, 270, 620, 300);
 
-    ctx.font = "100px serif";
+    ctx.font = "80px serif";
     ctx.fillStyle = "#870007";
     ctx.textAlign = "center";
-    ctx.fillText("Game Over!", W / 2, H / 2);
+    ctx.fillText("Game Over!", W / 2, H / 2 + 10);
 
-    ctx.font = "100px serif";
+    ctx.font = "80px serif";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
-    ctx.fillText("Your final score", W / 2, H / 2 + 150);
+    ctx.fillText("Your final score", W / 2, H / 2 + 110);
 
-    ctx.font = "100px serif";
+    ctx.font = "80px serif";
     ctx.fillStyle = "white";
     ctx.textAlign = "center";
-    ctx.fillText(`${points}`, W / 2, H / 2 + 300);
+    ctx.fillText(`${points}`, W / 2, H / 2 + 200);
   }
 }
 

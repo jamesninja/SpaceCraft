@@ -6,12 +6,12 @@ class Shoot {
 
       const imgRatio = img.naturalWidth / img.naturalHeight;
 
-      this.w = 100;
+      this.w = 20;
       this.h = this.w / imgRatio;
       this.x = 300;
       this.y = 300;
     };
-    img.src = "images/spaceship_green.svg";
+    img.src = "images/shoot.svg";
   }
 
   draw() {
