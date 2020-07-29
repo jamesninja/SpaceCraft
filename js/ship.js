@@ -8,7 +8,7 @@ class Ship {
 
       this.w = 70;
       this.h = this.w / imgRatio;
-      this.x = 300;
+      this.x = 50;
       this.y = 300;
     };
     img.src = "images/spaceship_green.svg";
@@ -24,14 +24,14 @@ class Ship {
     if (this.x <= 0) {
       this.x += 0;
     } else {
-      this.x += -10;
+      this.x += -20;
     }
   }
   moveRight() {
     if (this.x >= W) {
       this.x += 0;
     } else {
-      this.x += 10;
+      this.x += 20;
     }
   }
 
@@ -39,15 +39,15 @@ class Ship {
     if (this.y <= 0) {
       this.y -= 0;
     } else {
-      this.y -= 10;
+      this.y -= 20;
     }
   }
 
   moveDown() {
-    if (this.y >= H) {
+    if (this.y >= H - this.h) {
       this.y += 0;
     } else {
-      this.y += 10;
+      this.y += 20;
     }
   }
   shoot() {

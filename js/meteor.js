@@ -10,8 +10,8 @@ class Meteor {
       this.img = img;
       const imgRatio = img.naturalWidth / img.naturalHeight;
       this.x = W;
-      this.y = random(50, 450);
-      this.w = 30;
+      this.y = random(40, 450);
+      this.w = 20;
       this.h = this.w / imgRatio;
     };
     img.src = "images/meteor.svg";

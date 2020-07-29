@@ -8,6 +8,7 @@ body {
 body {
   display: flex;
   min-height: 100vh;
+  overflow: hidden;
 }
 body > div {
   flex: 1;
