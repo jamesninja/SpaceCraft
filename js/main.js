@@ -2,8 +2,8 @@ let ship;
 let meteors = [];
 let gameover = false;
 let points = 0;
-let laserTotal = 2;
-let lasers = [];
+//let laserTotal = 2;
+let laser = [];
 
 const ctx = document.querySelector("canvas").getContext("2d");
 const W = ctx.canvas.width;
@@ -23,7 +23,7 @@ function draw() {
   //
   ship.draw();
 
-  drawLaser();
+  //drawLaser();
   //
   // Iteration #4: obstacles
   //
@@ -71,28 +71,28 @@ document.onkeydown = function (e) {
       ship.shoot();
       break;
   }
-  if (e.keyCode == 32 && lasers.length <= laserTotal) {
-    lasers.push([ship.x + ship.w, ship.y + ship.h / 2, 4, 20]);
-    // console.log(lasers);
-  }
+  // // if (e.keyCode == 32 && lasers.length <= laserTotal) {
+  // //   lasers.push([ship.x + ship.w, ship.y + ship.h / 2, 4, 20]);
+  // //   // console.log(lasers);
+  // }
 };
 
-function drawLaser() {
-  if (lasers.length)
-    for (var i = 0; i < lasers.length; i++) {
-      ctx.fillStyle = "#f00";
-      ctx.fillRect(lasers[i][0], lasers[i][1], lasers[i][2], lasers[i][3]);
-    }
-}
-function moveLaser() {
-  for (var i = 0; i < lasers.length; i++) {
-    if (lasers[i][1] > -11) {
-      lasers[i][1] -= 10;
-    } else if (lasers[i][1] < -10) {
-      lasers.splice(i, 1);
-    }
-  }
-}
+// function drawLaser() {
+//   if (lasers.length)
+//     for (var i = 0; i < lasers.length; i++) {
+//       ctx.fillStyle = "#f00";
+//       ctx.fillRect(lasers[i][0], lasers[i][1], lasers[i][2], lasers[i][3]);
+//     }
+// }
+// function moveLaser() {
+//   for (var i = 0; i < lasers.length; i++) {
+//     if (lasers[i][1] > -11) {
+//       lasers[i][1] -= 10;
+//     } else if (lasers[i][1] < -10) {
+//       lasers.splice(i, 1);
+//     }
+//   }
+// }
 
 let raf;
 let frames = 0;
@@ -110,8 +110,8 @@ function animLoop() {
     }
   }
   draw();
-  moveLaser();
-  drawLaser();
+  //moveLaser();
+  //drawLaser();
 
   if (!gameover) {
     raf = requestAnimationFrame(animLoop);
