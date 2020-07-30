@@ -2,16 +2,12 @@ class Missile {
   constructor() {
     const img = document.createElement("img");
     img.onload = () => {
-      this.img = img;
-
-      const imgRatio = img.naturalWidth / img.naturalHeight;
-
-      this.w = 100;
-      this.h = this.w / imgRatio;
-      this.x = 300;
-      this.y = 300;
+      this.x = ship.x + ship.w;
+      this.y = ship.y + ship.h / 2;
+      this.w = 20;
+      this.h = 4;
     };
-    img.src = "images/spaceship_green.svg";
+    img.src = "images/missile.svg";
   }
 
   draw() {
@@ -19,35 +15,20 @@ class Missile {
 
     ctx.drawImage(this.img, this.x, this.y, this.w, this.h);
   }
-
-  moveLeft() {
-    if (this.x <= 0) {
-      this.x += 0;
-    } else {
-      this.x += -10;
-    }
+  destroy(meteor) {
+    return (
+      meteor.x + meteor.w >= this.x &&
+      meteor.x <= this.x + this.w &&
+      meteor.y <= this.y + this.h &&
+      meteor.y + meteor.h >= this.y
+    );
   }
-  moveRight() {
-    if (this.x >= W) {
-      this.x += 0;
-    } else {
-      this.x += 10;
-    }
-  }
-
-  moveUp() {
-    if (this.y <= 0) {
-      this.y -= 0;
-    } else {
-      this.y -= 10;
-    }
-  }
-
-  moveDown() {
-    if (this.y >= H) {
-      this.y += 0;
-    } else {
-      this.y += 10;
-    }
+  destroy2(enemy) {
+    return (
+      enemy.x + enemy.w >= this.x &&
+      enemy.x <= this.x + this.w &&
+      enemy.y <= this.y + this.h &&
+      enemy.y + enemy.h >= this.y
+    );
   }
 }
