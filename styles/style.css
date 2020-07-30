@@ -44,3 +44,15 @@ body button {
 p {
   font-size: 30px;
 }
+
+@keyframes background-img {
+  from {
+    background-position: 0px 0px;
+  }
+  to {
+    background-position: 1920px 0px;
+  }
+}
+#backgroundAnimation {
+  animation: defile 5s infinite;
+}
