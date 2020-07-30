@@ -75,7 +75,7 @@ function draw() {
   missiles.forEach(function (missile) {
     missile.draw();
     for (var i = 0; i < ennemys.length; i++) {
-      if (missile.destroy(ennemys[i])) {
+      if (missile.destroy2(ennemys[i])) {
         //console.log("hit");
         ennemys.splice(ennemys[i], 1);
         points++;
@@ -108,7 +108,7 @@ document.onkeydown = function (e) {
       lasers.push(new Laser());
       // console.log("hit", lasers)
       break;
-    case 32:
+    case 77:
       missiles.push(new Missile());
       // console.log("hit", missiles)
       break;
