@@ -125,7 +125,7 @@ function animLoop() {
     }
   }
   for (let i = 0; i < meteors.length; i++) {
-    meteors[i].x -= 5;
+    meteors[i].x -= 4;
     meteors[i].x -= 6;
     meteors[i].y += 0;
   }

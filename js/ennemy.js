@@ -16,7 +16,7 @@ class Ennemy {
       this.w = 60;
       this.h = this.w / imgRatio;
     };
-    img.src = "images/spaceshipEnnemy3.svg";
+    img.src = "images/spaceshipEnnemy2.svg";
   }
 
   draw() {
