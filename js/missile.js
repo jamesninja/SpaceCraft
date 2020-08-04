@@ -2,10 +2,11 @@ class Missile {
   constructor() {
     const img = document.createElement("img");
     img.onload = () => {
+      this.img = img;
       this.x = ship.x + ship.w;
       this.y = ship.y + ship.h / 2;
-      this.w = 20;
-      this.h = 4;
+      this.w = 50;
+      this.h = 20;
     };
     img.src = "images/missile.svg";
   }

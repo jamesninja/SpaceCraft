@@ -8,7 +8,7 @@ class Ship {
 
       this.w = 100;
       this.h = this.w / imgRatio;
-      this.x = 300;
+      this.x = 10;
       this.y = 300;
     };
     img.src = "images/spaceship_green.svg";

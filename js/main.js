@@ -138,7 +138,8 @@ function animLoop() {
   }
 
   for (let i = 0; i < missiles.length; i++) {
-    missiles[i].x += 5;
+    missiles[i].x += 6;
+    missiles[i].y += 1;
   }
 
   draw();

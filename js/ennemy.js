@@ -10,7 +10,7 @@ class Ennemy {
       this.img = img;
       const imgRatio = img.naturalWidth / img.naturalHeight;
       //this.x = W;
-      this.x = random(10, 1000);
+      this.x = random(200, 1200);
       this.y = 700;
       //this.y = random(40, 450);
       this.w = 60;
