@@ -5,7 +5,7 @@ class Background {
 
     // in-memory background image element
     const img = document.createElement("img");
-
+    img.src = "images/background.png";
     //
     // our object `backgroundImage` with properties and methods
     //
