@@ -1,3 +1,4 @@
+let background;
 let ship;
 let meteors = [];
 let ennemys = [];
@@ -13,10 +14,11 @@ const W = ctx.canvas.width;
 const H = ctx.canvas.height;
 function draw() {
   // Background
-  const img = document.createElement("img");
-  img.src = "images/background.png";
-  ctx.drawImage(img, 0, 0, W, H);
+  // const img = document.createElement("img");
+  // img.src = "images/background.png";
+  // ctx.drawImage(img, 0, 0, W, H);
   // ship & laser drawing
+  background.draw();
   ship.draw();
 
   //collisions Meteor
@@ -169,6 +171,7 @@ function startGame() {
   meteors = [];
   ennemys = [];
   points = 0;
+  background = new Background();
   ship = new Ship();
   let meteor = new Meteor();
   meteors.push(meteor);
